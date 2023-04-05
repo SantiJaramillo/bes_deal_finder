@@ -5,7 +5,7 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 require("../conexion.php");
 
 $con = "SELECT * from productos ORDER BY nombre";
-$res=mysqli_query($conexion,$con) or die('no consulto usuario');
+$res = mysqli_query( $conexion , $con ) or die('no consulto usuario');
 
 
 $vec=[];
